@@ -1,9 +1,13 @@
 <html>
-
-  <script src="index-bundle.js"></script>
-
-  <body ng-app="theWholeApp" ng-controller="IndexController as IndexCtrl" ng-cloak>
-      <sb-process-matrix sb-model="IndexCtrl.deliverables"></sb-process-matrix>
-  </body>
-
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
+		<script src="index-bundle.js"></script>
+	</head>
+	<body ng-app="theWholeApp" ng-controller="IndexController as IndexCtrl" ng-cloak>
+		<header class="page-row"><div><h1>Sablono Process Viewer</h1></div></header>
+		<section class="page-row page-row-expanded">
+		<sb-process-matrix sb-model="IndexCtrl.deliverables"></sb-process-matrix>
+		</section>
+		<footer class="page-row"><div><h3>Sablono</h3></div></footer>
+	</body>
 </html>

@@ -1,9 +1,5 @@
-<md-card>
-	<md-card-title class="less-blue">
-	   <div layout="column">
-		 <h3>{{$ctrl.task.name}}</h3>
-		 <p>{{$ctrl.task.description}}</p>
-	   </div>
-	</md-card-title>
-</md-card>
+<div class="task task-step{{$ctrl.task.step}} task-progress{{$ctrl.task.progress}}">
+	<h3>{{$ctrl.task.step}}: {{$ctrl.task.name}}</h3>
+	<p>{{$ctrl.task.description}}</p>
+</div>
 

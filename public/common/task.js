@@ -1,7 +1,7 @@
 class Task{
 	constructor(args){
 		this.id = args.id || null;
-		this.name = args.name || null;
+		this.name = args.name.replace(/\b\w/g, l => l.toUpperCase()) || null;
 		this.utcStart = args.utcStart || null;
 		this.dateStart = this.utcStart ? new Date(this.utcStart) : null;
 		this.utcEnd = args.utcEnd || null;
