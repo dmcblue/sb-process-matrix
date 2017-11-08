@@ -38,6 +38,18 @@ Run locally
     npm run start
 ```
 
+## Requirements
+
+1. [] Please limit your committed time to a maximum of 3 hours
+1. [x] Fork the repository to your account
+1. [] Use angularJs and material.angularjs.org (both installed and ready to use)
+1. [x] It's not allowed to add any other library or framework
+1. [] Create a nice visualization for deliverables and their tasks
+1. [] Feel free to add any custom style (use the .less files)
+1. [] Create a Pull Request with your changes once you are done
+
+## TODO
+
 ## Credit
 project setup taken from 
 * https://www.codementor.io/narthur157/how-to-modernized-angularjs-1-5-with-es6-webpack-mocha-sass-and-components-7yp0apprt
