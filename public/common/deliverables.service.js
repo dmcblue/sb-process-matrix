@@ -1,3 +1,4 @@
+import {Deliverable} from './deliverable.js';
 /**
  * Simple data service (simulating an API request)
  */
@@ -12,7 +13,9 @@ class DeliverablesService {
 
         return this.$timeout(300)
             .then(() => {
-                return dummyData;
+                return dummyData.map((item) => {
+					return new Deliverable(item);
+				});
             });
     }
 
