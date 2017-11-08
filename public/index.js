@@ -7,6 +7,7 @@ require('angular-material');
 
 import {processMatrixComponent} from './sb-process-matrix/process_matrix.js';
 import {deliverableComponent} from './sb-deliverable/deliverable.js';
+import {taskComponent} from './sb-task/task.js';
 import {DeliverablesService} from './common/deliverables.service.js';
 
 class IndexController {
@@ -31,4 +32,5 @@ angular
     .factory('sbDeliverables', DeliverablesService)
     .component('sbProcessMatrix', processMatrixComponent)
 	.component('sbDeliverable', deliverableComponent)
+	.component('sbTask', taskComponent)
     .controller('IndexController', IndexController);

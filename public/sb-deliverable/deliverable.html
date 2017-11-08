@@ -1,12 +1,12 @@
-<md-card>
-	<md-card-title class="less-blue">
-	   <div layout="column">
-		 <h3>{{$ctrl.deliverable.name}}</h3>
-		 <p>{{$ctrl.deliverable.description}}</p>
-	   </div>
-	</md-card-title>
-</md-card>
-<div layout="column">
-	<div ng-repeat="activity in $ctrl.deliverable.activities" flex>activity.name</div>
+<div layout="row" layout-wrap>
+	<md-card>
+		<md-card-title class="less-blue">
+		   <div layout="column">
+			 <h3>{{$ctrl.deliverable.name}}</h3>
+			 <p>{{$ctrl.deliverable.description}}</p>
+		   </div>
+		</md-card-title>
+	</md-card>
+	<sb-task ng-repeat="task in $ctrl.deliverable.activities" task="task"></sb-task>
 </div>
 

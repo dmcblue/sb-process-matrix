@@ -4,7 +4,7 @@
 class DeliverableController {
 
   constructor () {
-    console.log('DeliverableController');
+    //console.log('DeliverableController');
   }
 
   /**
@@ -13,7 +13,7 @@ class DeliverableController {
    * @return {undefined} undefined
    */
   $onInit () {
-    console.log('input bindings are defined!', this.sbModel);
+    //console.log('input bindings are defined!', this.sbModel);
   }
 }
 
