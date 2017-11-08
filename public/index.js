@@ -6,6 +6,7 @@ require('angular-messages');
 require('angular-material');
 
 import {processMatrixComponent} from './sb-process-matrix/process_matrix.js';
+import {deliverableComponent} from './sb-deliverable/deliverable.js';
 import {DeliverablesService} from './common/deliverables.service.js';
 
 class IndexController {
@@ -29,4 +30,5 @@ angular
     .module('theWholeApp', [])
     .factory('sbDeliverables', DeliverablesService)
     .component('sbProcessMatrix', processMatrixComponent)
+	.component('sbDeliverable', deliverableComponent)
     .controller('IndexController', IndexController);
